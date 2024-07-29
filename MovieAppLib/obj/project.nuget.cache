@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LM0DpOqVWU8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\atharv.sathe\\source\\repos\\MovieAppLib\\MovieAppLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\atharv.sathe\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

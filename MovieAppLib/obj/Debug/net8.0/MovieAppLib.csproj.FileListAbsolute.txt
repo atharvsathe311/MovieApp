@@ -1,0 +1,12 @@
+C:\Users\atharv.sathe\source\repos\MovieAppLib\bin\Debug\net8.0\MovieAppLib.deps.json
+C:\Users\atharv.sathe\source\repos\MovieAppLib\bin\Debug\net8.0\MovieAppLib.dll
+C:\Users\atharv.sathe\source\repos\MovieAppLib\bin\Debug\net8.0\MovieAppLib.pdb
+C:\Users\atharv.sathe\source\repos\MovieAppLib\obj\Debug\net8.0\MovieAppLib.csproj.AssemblyReference.cache
+C:\Users\atharv.sathe\source\repos\MovieAppLib\obj\Debug\net8.0\MovieAppLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atharv.sathe\source\repos\MovieAppLib\obj\Debug\net8.0\MovieAppLib.AssemblyInfoInputs.cache
+C:\Users\atharv.sathe\source\repos\MovieAppLib\obj\Debug\net8.0\MovieAppLib.AssemblyInfo.cs
+C:\Users\atharv.sathe\source\repos\MovieAppLib\obj\Debug\net8.0\MovieAppLib.csproj.CoreCompileInputs.cache
+C:\Users\atharv.sathe\source\repos\MovieAppLib\obj\Debug\net8.0\MovieAppLib.dll
+C:\Users\atharv.sathe\source\repos\MovieAppLib\obj\Debug\net8.0\refint\MovieAppLib.dll
+C:\Users\atharv.sathe\source\repos\MovieAppLib\obj\Debug\net8.0\MovieAppLib.pdb
+C:\Users\atharv.sathe\source\repos\MovieAppLib\obj\Debug\net8.0\ref\MovieAppLib.dll
