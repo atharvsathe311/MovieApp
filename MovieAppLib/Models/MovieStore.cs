@@ -9,19 +9,22 @@ namespace MovieAppLib.Models
 {
     public class MovieStore
     {
+         MovieManager movieManager = new MovieManager();
         public static void MainMenu()
         {
-            MovieManager.MovieListEmptyChecker();
-            ChoiceMenu();
+            MovieManager movieManager = new MovieManager();
+            movieManager.MovieListEmptyChecker();
+            MovieStore movieStore = new MovieStore();
+            movieStore.ChoiceMenu();
         }
 
-        public static void ChoiceMenu()
+        public void ChoiceMenu()
         {
             int userChoice = 1;
 
             do
             {
-                MovieManager.DotLinePrinter();
+                movieManager.DotLinePrinter();
                 Console.WriteLine("Welcome To Movie Store");
 
                 userChoice = ChoiceMenuWhileLoop(userChoice);
@@ -36,11 +39,11 @@ namespace MovieAppLib.Models
 
         }
 
-        public static int ChoiceMenuWhileLoop(int userChoice)
+        public int ChoiceMenuWhileLoop(int userChoice)
         {
             while (true)
             {
-                MovieManager.DotLinePrinter();
+                movieManager.DotLinePrinter();
                 Console.WriteLine("Choose and Enter Digit From Below");
                 Console.WriteLine("1 -> To Get Movie Details by Id");
                 Console.WriteLine("2 -> To Add a Movie");
@@ -48,7 +51,7 @@ namespace MovieAppLib.Models
                 Console.WriteLine("4 -> To Update a Movie");
                 Console.WriteLine("5 -> To Get Total Number of Movies");
                 Console.WriteLine("6 -> To Exit");
-                MovieManager.DotLinePrinter();
+                movieManager.DotLinePrinter();
 
 
 
@@ -77,17 +80,17 @@ namespace MovieAppLib.Models
 
         }
 
-        public static void ChoiceMenuSwitch(int userChoice)
+        public void ChoiceMenuSwitch(int userChoice)
         {
             switch (userChoice)
             {
                 case 1:
-                    MovieManager.DisplayMovie();
+                    movieManager.DisplayMovie();
                     break;
                 case 2:
                     try
                     {
-                        MovieManager.Add();
+                        movieManager.Add();
                     }
                     catch (Exception e)
                     {
@@ -97,7 +100,7 @@ namespace MovieAppLib.Models
                 case 3:
                     try
                     {
-                        MovieManager.Remove();
+                        movieManager.Remove();
                     }
                     catch (Exception e)
                     {
@@ -107,7 +110,7 @@ namespace MovieAppLib.Models
                 case 4:
                     try
                     {
-                        MovieManager.Update();
+                        movieManager.Update();
                     }
                     catch (Exception e)
                     {
@@ -115,7 +118,7 @@ namespace MovieAppLib.Models
                     }
                     break;
                 case 5:
-                    MovieManager.MovieCount();
+                    movieManager.MovieCount();
                     break;
                 case 6:
                     break;
