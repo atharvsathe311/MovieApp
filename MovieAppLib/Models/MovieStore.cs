@@ -100,6 +100,14 @@ namespace MovieAppLib.Models
                 case 3:
                     try
                     {
+                        Console.WriteLine("Enter 1 -> To Delete Specific Movie");
+                        Console.WriteLine("Enter 2 -> To Delete All Movies");
+                        int userDeleteChoice = int.Parse(Console.ReadLine());
+                        if (userDeleteChoice == 2)
+                        {
+                            movieManager.FlushAllMovies();
+                            break;
+                        }
                         movieManager.Remove();
                     }
                     catch (Exception e)
@@ -122,7 +130,7 @@ namespace MovieAppLib.Models
                     break;
                 case 6:
                     break;
-
+                
             }
 
         }

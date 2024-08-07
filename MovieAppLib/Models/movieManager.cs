@@ -17,6 +17,11 @@ namespace MovieAppLib.Models
         public void Add()
         {
             Console.WriteLine(".................. Adding Movie ..................");
+            if (movies.Count > 5) 
+            {
+                Console.WriteLine("Maximum Number of Movies Limit Reached");
+                return;
+            }
             Console.WriteLine("Enter Movie Name");
             string movieName = Console.ReadLine();
             Console.WriteLine("Enter Movie Genre");
@@ -206,6 +211,23 @@ namespace MovieAppLib.Models
         public void DotLinePrinter()
         {
             Console.WriteLine("..................................................");
+        }
+
+        public void FlushAllMovies()
+        {
+            DotLinePrinter();
+            Console.WriteLine("Deleting All Movies");
+            foreach (Movie movie in movies)
+            {
+                Console.WriteLine($"{movie.id}");
+            }
+            movies.Clear();
+            foreach (Movie movie in movies)
+            {
+                Console.WriteLine($"{movie.id}");
+            }
+            SerialDeserial.SerialiseData(movies);
+            DotLinePrinter();
         }
 
 
